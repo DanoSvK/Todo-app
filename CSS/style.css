@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(/images/bg-mobile-dark.jpg);
+  font-size: 1.125rem;
+  background-repeat: no-repeat;
+  background-size: 100% 25vh;
+  background-color: #171823;
+  margin: 0 1.5625rem;
+}
+
+p {
+  margin: 0;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 1.75rem;
+}
+.bar img {
+  align-self: center;
+}
+
+.top-list {
+  background-color: #25273d;
+  padding: 0.875rem 1.25rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.top-list_check {
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.top-list_add-item {
+  background-color: transparent;
+  border: none;
+}
+
+.middle-list {
+  background-color: #25273d;
+  border-radius: 5px;
+  color: #c8cbe7;
+}
+
+.middle-list_item_text {
+  display: flex;
+}
+
+.middle-list_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.875rem 1.25rem;
+}
+.middle-list_item:not(:last-child) {
+  border-bottom: 1px solid #393a4b;
+}
+.middle-list_item:last-child {
+  color: #5b5e7e;
+}
+.middle-list_item p {
+  margin-left: 12px;
+}
+.middle-list_item img {
+  align-self: center;
+}
+
+.bottom-list {
+  display: flex;
+  justify-content: center;
+  background-color: #25273d;
+  color: #5b5e7e;
+  padding: 0.9375rem 5rem;
+  margin-top: 1rem;
+}
+
+.bottom-list_all {
+  margin-right: 1.125rem;
+}
+
+.bottom-list_active {
+  margin-right: 1.125rem;
+}
+
+.note {
+  display: grid;
+  place-content: center;
+  color: #5b5e7e;
+  margin-top: 3.375rem;
+  margin-bottom: 3.125rem;
+}
+
+/*# sourceMappingURL=style.css.map */
