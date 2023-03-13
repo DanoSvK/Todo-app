@@ -69,8 +69,6 @@ p {
 }
 .middle-list_item img {
   align-self: center;
-  width: 12px;
-  height: 12px;
 }
 
 .bottom-list {
@@ -97,6 +95,4 @@ p {
   color: #5b5e7e;
   margin-top: 3.375rem;
   margin-bottom: 3.125rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

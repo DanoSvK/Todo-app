@@ -3,7 +3,7 @@ $dark-header-color: #ffffff;
 $dark-secondary-color: #5b5e7e;
 $dark-select-color: #4d5067;
 $dark-hover-color: #e3e4f1;
-
+$dark-active-color: #3a7cfd;
 $bg-color: #171823;
 $bg-secondary-color: #25273d;
 
@@ -72,6 +72,8 @@ p {
   }
   img {
     align-self: center;
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -82,6 +84,7 @@ p {
   color: $dark-secondary-color;
   padding: 0.9375rem 5rem;
   margin-top: 1rem;
+  border-radius: 5px;
 }
 .bottom-list_all {
   margin-right: 1.125rem;
