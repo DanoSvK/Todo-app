@@ -11,7 +11,7 @@ let checkbox = document.querySelector("input[name=theme_switch]");
 // document.documentElement.setAttribute("data-theme", "dark");
 // checkbox.checked = true;
 
-// // switch theme if checkbox is engaged
+// input switch
 // checkbox.addEventListener("change", (cb) => {
 //   document.documentElement.setAttribute(
 //     "data-theme",
@@ -19,12 +19,21 @@ let checkbox = document.querySelector("input[name=theme_switch]");
 //   );
 //   console.log(cb.target);
 // });
+
+// button switch
+const btn = document.querySelector(".btn");
 document.documentElement.setAttribute("data-theme", "dark");
 let switcher = 1;
-document.querySelector(".ok").addEventListener("click", function (e) {
-  switcher === 0
-    ? document.documentElement.setAttribute("data-theme", "dark")
-    : document.documentElement.setAttribute("data-theme", "light");
+btn.addEventListener("click", function (e) {
+  if (switcher === 0) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    btn.classList.remove("light");
+    btn.classList.add("dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    btn.classList.remove("dark");
+    btn.classList.add("light");
+  }
   switcher = switcher === 0 ? 1 : 0;
   console.log(switcher);
 });

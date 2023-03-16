@@ -45,6 +45,9 @@ html[data-theme="light"] {
   --border-color: #{$light-border-color};
   --container-shadow-color: #{$light-container-shadow-color};
 }
+* {
+  transition: all 0.3s ease-in-out;
+}
 body {
   min-height: 100vh;
   background-image: url(/images/bg-mobile-dark.jpg);
@@ -86,10 +89,20 @@ h1 {
     font-weight: 700;
   }
 }
-button {
+.btn {
+  background: none;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+}
+.dark {
   background-image: url(/images/icon-sun.svg);
 }
-
+.light {
+  background-image: url(/images/icon-moon.svg);
+}
 .top-list {
   background-color: var(--bg-secondary-color);
   padding: 0.875rem 1.25rem;
