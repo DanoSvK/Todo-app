@@ -178,40 +178,41 @@ completed.addEventListener("click", function () {
 
 // Drag and drop API
 
-// let dragStart;
-// let dragEnd;
+let dragStart;
+let dragEnd;
 
-// list.addEventListener("dragstart", function (e) {
-//   if (e.target.classList.contains("middle-list__item")) {
-//     e.dataTransfer.setData("text/plain", e.target.id);
-//     dragStart = e.target;
-//   }
-// });
-
-// list.addEventListener("dragover", function (e) {
-//   e.preventDefault();
-//   if (e.target.classList.contains("middle-list__item")) {
-//     e.target.style.opacity = "0.5";
-//   }
-// });
-
-// list.addEventListener("dragleave", function (e) {
-//   e.target.style.opacity = "1";
-// });
-
-// list.addEventListener("drop", function (e) {
-//   e.preventDefault();
-//   if (e.target.classList.contains("middle-list__item")) {
-//     //const droppedElementId = e.dataTransfer.getData("text/plain");
-//     //const droppedElement = document.getElementById(droppedElementId);
-
-//     e.target.style.opacity = "1";
-//     dragEnd = e.target;
-//     list.insertBefore(dragStart, dragEnd);
-//   }
-// });
-
-//  SortableJS library - my point was learning Drag and Drop API, but I also found SortableJS, which is way better both code-wise and visual-wise, so I sticked with that in my final code
-new Sortable(list, {
-  animation: 350,
+list.addEventListener("dragstart", function (e) {
+  if (e.target.classList.contains("middle-list__item")) {
+    e.dataTransfer.setData("text/plain", e.target.id);
+    dragStart = e.target;
+  }
 });
+
+list.addEventListener("dragover", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("middle-list__item")) {
+    e.target.style.opacity = "0.5";
+  }
+});
+
+list.addEventListener("dragleave", function (e) {
+  e.target.style.opacity = "1";
+});
+
+list.addEventListener("drop", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("middle-list__item")) {
+    //const droppedElementId = e.dataTransfer.getData("text/plain");
+    //const droppedElement = document.getElementById(droppedElementId);
+
+    e.target.style.opacity = "1";
+    dragEnd = e.target;
+    list.insertBefore(dragStart, dragEnd);
+  }
+});
+
+// SortableJS library - my point was learning Drag and Drop API, but I also found SortableJS, which is way better both code-wise and visual-wise, so I sticked with that in my final code
+// Edit: sortableJS is not working well on mobile devices - enabled Drag and Drop API
+// new Sortable(list, {
+//   animation: 350,
+// });
