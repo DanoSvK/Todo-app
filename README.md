@@ -22,8 +22,8 @@ Users should be able to:
 
 # Links
 
-- Solution URL: [Add solution URL here](https://github.com/DanoSvK/Todo-app.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/DanoSvK/Todo-app.git)
+- Live Site URL: [Live site](https://danosvk.github.io/Todo-app/)
 
 ### Built with
 
