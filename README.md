@@ -36,14 +36,10 @@ Users should be able to:
 - SortableJS - JS library
 - Drag and Drop API
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 # What I learned
 
 I learned how to create dynamic dark/light themes, how to switch them ith both checkbox and button and how to make app recognize default theme used on the user's PC.
 Next I learned howt o use Drag and Drop API and on my way there I also discovered Sortable JS, which I prioritized (but kept my working Drag and Drop API code inside commented).
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 # Author
 - Frontend Mentor - [@DanoSvK](https://www.frontendmentor.io/profile/DanoSvK)
