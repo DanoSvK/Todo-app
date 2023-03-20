@@ -101,7 +101,7 @@ list.addEventListener("click", function (e) {
     n--;
     counter.textContent = n;
   }
-  if (n === 0) {
+  if (n === 0 && document.querySelectorAll(".completed").length === 0) {
     document.querySelector(".middle-list__empty").style.display = "block";
   }
 });
@@ -142,7 +142,7 @@ deleteAllCompleted.addEventListener("click", function () {
   }
 });
 
-// All, active, completed categories gets their classes added and removed based on whichi button is clicked and which items should be visible
+// All, active, completed categories gets their classes added and removed based on which button is clicked and which items should be visible
 all.addEventListener("click", function () {
   document
     .querySelectorAll(".middle-list__item")
