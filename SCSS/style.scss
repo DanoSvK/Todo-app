@@ -60,23 +60,23 @@ html {
 }
 body {
   min-height: 100vh;
-  background-image: url(/images/bg-mobile-dark.jpg);
+  background-image: url(../images/bg-mobile-dark.jpg);
   background-size: 100% 12.5rem;
   background-repeat: no-repeat;
   background-color: var(--bg-color);
   margin: 0 1.5625rem;
   font: {
     family: "Josefin Sans", sans-serif;
-    size: 0.75rem;
+    size: 0.875rem;
   }
   line-height: 18px;
   letter-spacing: -0.25;
 }
 .body-dark {
-  background-image: url(/images/bg-mobile-dark.jpg);
+  background-image: url(../images/bg-mobile-dark.jpg);
 }
 .body-light {
-  background-image: url(/images/bg-mobile-light.jpg);
+  background-image: url(../images/bg-mobile-light.jpg);
 }
 main {
   max-width: 30rem;
@@ -113,10 +113,10 @@ p,
   cursor: pointer;
 }
 .dark {
-  background-image: url(/images/icon-sun.svg);
+  background-image: url(../images/icon-sun.svg);
 }
 .light {
-  background-image: url(/images/icon-moon.svg);
+  background-image: url(../images/icon-moon.svg);
 }
 .form__top-list {
   display: flex;
@@ -158,9 +158,9 @@ p,
 }
 .checkbox:checked {
   background-color: linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
-  background-image: url(/images/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
 
-  background: url(/images/icon-check.svg) center center no-repeat,
+  background: url(../images/icon-check.svg) center center no-repeat,
     linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
   border: none;
   transition: none;
@@ -287,15 +287,15 @@ p,
 
 @media (min-width: 768px) {
   body {
-    background-image: url(/images/bg-desktop-dark.jpg);
+    background-image: url(../images/bg-desktop-dark.jpg);
     background-size: 100% 18.75rem;
     font-size: 1.125rem;
   }
   .body-dark {
-    background-image: url(/images/bg-desktop-dark.jpg);
+    background-image: url(../images/bg-desktop-dark.jpg);
   }
   .body-light {
-    background-image: url(/images/bg-desktop-light.jpg);
+    background-image: url(../images/bg-desktop-light.jpg);
   }
   .bar {
     padding-top: 70px;
@@ -362,5 +362,9 @@ p,
   .footer__grid-3 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
+  }
+  .cross {
+    width: 17px !important;
+    height: 17px !important;
   }
 }

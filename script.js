@@ -68,7 +68,7 @@ function generateItem(e) {
       <input class="checkbox" type="checkbox" />
       <p class="list-text">${addItem.value}</p>
     </div>
-    <img class="cross" src="/images/icon-cross.svg" alt="" />
+    <img class="cross" src="./images/icon-cross.svg" alt="" />
   </div>`;
   if (addItem.value != "") {
     list.insertAdjacentHTML("beforeend", html);
