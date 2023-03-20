@@ -15,32 +15,35 @@
   <body>
     <main>
       <section class="bar">
-        <h1>Todo</h1>
+        <h1 class="logo">Todo</h1>
         <button class="btn dark" name="theme_switch" id="switch"></button>
       </section>
 
       <section class="container">
-        <form class="input-form">
-          <div class="top-list">
-            <input class="top-list_checkbox" type="checkbox" />
+        <form class="form">
+          <div class="form__top-list">
+            <input class="form__top-list__checkbox" type="checkbox" />
             <input
-              class="top-list_textarea"
+              class="form__top-list__textarea"
               placeholder="Create a new todo..."
             />
           </div>
         </form>
 
         <div class="middle-list">
-          <p class="middle-list_empty">Task list is empty!</p>
+          <p class="middle-list__empty">Task list is empty!</p>
         </div>
+
         <div class="footer">
-          <p><span class="footer_counter">6</span> items left</p>
-          <p class="footer_counter-text">Clear Completed</p>
-        </div>
-        <div class="bottom-list">
-          <p class="bottom-list_all active-btn">All</p>
-          <p class="bottom-list_active">Active</p>
-          <p class="bottom-list_completed">Completed</p>
+          <p class="footer__grid-1">
+            <span class="footer__counter">6</span> items left
+          </p>
+          <p class="footer__text footer__grid-2">Clear Completed</p>
+          <div class="bottom-list footer__grid-3">
+            <p class="bottom-list__all active-btn">All</p>
+            <p class="bottom-list__active">Active</p>
+            <p class="bottom-list__completed">Completed</p>
+          </div>
         </div>
         <p class="note">Drag and drop to reorder list</p>
       </section>

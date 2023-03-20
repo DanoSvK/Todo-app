@@ -79,11 +79,11 @@ body {
   background-image: url(/images/bg-mobile-light.jpg);
 }
 main {
-  max-width: 27.4375rem;
+  max-width: 30rem;
   margin: 0 auto;
 }
 p,
-h1 {
+.logo {
   margin: 0;
 }
 
@@ -97,7 +97,7 @@ h1 {
   img {
     align-self: center;
   }
-  h1 {
+  .logo {
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 28px;
@@ -118,7 +118,7 @@ h1 {
 .light {
   background-image: url(/images/icon-moon.svg);
 }
-.top-list {
+.form__top-list {
   display: flex;
   align-items: center;
   position: relative;
@@ -131,20 +131,19 @@ h1 {
     color: var(--main-color);
     outline: none;
   }
-  .top-list_textarea {
-    background-color: transparent;
-    border: none;
-    font-size: 0.75rem;
-  }
 }
-
+.form__top-list__textarea {
+  background-color: transparent;
+  border: none;
+  font-size: 0.75rem;
+}
 // .top-list_input {
 //   position: absolute;
 //   opacity: 0;
 //   padding: 1rem 1.25rem;
 // }
 .checkbox,
-.top-list_checkbox {
+.form__top-list__checkbox {
   margin-right: 0.75rem;
   display: inline-block;
   appearance: none;
@@ -154,7 +153,7 @@ h1 {
   border-radius: 50%;
   border: 1px solid var(--checkbox-border-color);
 }
-.top-list_checkbox {
+.top-list__checkbox {
   cursor: pointer;
 }
 .checkbox:checked {
@@ -180,13 +179,13 @@ h1 {
   color: var(--main-color);
   box-shadow: 0px 35px 50px -15px var(--container-shadow-color);
 }
-.middle-list_empty {
+.middle-list__empty {
   font-size: 1.125rem;
   padding: 1.25rem 1rem;
   text-align: center;
   border-bottom: 1px solid var(--border-color);
 }
-.middle-list_item,
+.middle-list__item,
 .footer {
   display: flex;
   justify-content: space-between;
@@ -212,22 +211,32 @@ h1 {
   box-shadow: 0px 35px 50px -15px var(--container-shadow-color);
   font-size: 0.875rem;
 }
-.middle-list_item {
+.middle-list__item {
   cursor: move;
   border-bottom: 1px solid var(--border-color);
 }
-.middle-list_item_text,
+.middle-list__item--text,
 .footer {
   display: flex;
   align-items: center;
 }
-.footer_counter-text:hover {
+.footer__text:hover {
   color: var(--hover-color);
   transition: all 0.5s;
   cursor: pointer;
 }
 .cross:hover {
   cursor: pointer;
+}
+.footer {
+  position: relative;
+}
+.bottom-list {
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 41px;
 }
 .bottom-list {
   display: flex;
@@ -250,13 +259,13 @@ h1 {
     color: var(--hover-color);
     transition: all 0.5s;
     &:hover,
-    .bottom-list_all:hover {
+    .bottom-list__all:hover {
       cursor: pointer;
     }
   }
 }
-.bottom-list_all,
-.bottom-list_active {
+.bottom-list__all,
+.bottom-list__active {
   margin-right: 1.125rem;
 }
 .active-btn {
@@ -269,7 +278,7 @@ h1 {
   display: grid;
   place-content: center;
   color: var(--secondary-color);
-  margin-top: 3.375rem;
+  margin-top: 105px;
   margin-bottom: 3.125rem;
   font-size: 0.875rem;
   line-height: 14px;
@@ -292,30 +301,33 @@ h1 {
     padding-top: 70px;
     padding-bottom: 3rem;
   }
+  main {
+    max-width: 33.75rem;
+  }
   .btn {
     width: 26px;
     height: 26px;
   }
-  .top-list {
+  .form__top-list {
     height: 4rem;
     align-items: center;
   }
-  .top-list_checkbox,
+  .form__top-list__checkbox,
   .checkbox {
     width: 24px;
     height: 24px;
     margin-right: 1.5rem;
   }
-  .top-list_textarea {
+  .form__top-list__textarea {
     font-size: 1.125rem !important;
   }
-  .middle-list_empty {
+  .middle-list__empty {
     font-size: 1.125rem;
     padding: 1.25rem 1rem;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
   }
-  .middle-list_item {
+  .middle-list__item {
     img {
       visibility: hidden;
     }
@@ -325,5 +337,30 @@ h1 {
   }
   .note {
     padding-bottom: 3.25rem;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 1rem 1.5rem;
+  }
+  .bottom-list {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__grid-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .footer__grid-2 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    margin-left: 3.5rem;
+  }
+  .footer__grid-3 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
   }
 }
