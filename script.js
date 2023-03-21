@@ -66,7 +66,7 @@ function generateItem(e) {
   <div id="draggableElement" class="middle-list__item active" draggable="true">
     <div class="middle-list__item--text">
       <input class="checkbox" type="checkbox" />
-      <p class="list-text">${addItem.value}</p>
+      <p class="middle-list__text">${addItem.value}</p>
     </div>
     <img class="cross" src="./images/icon-cross.svg" alt="" />
   </div>`;

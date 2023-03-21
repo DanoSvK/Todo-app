@@ -198,6 +198,9 @@ p,
     height: 12px;
   }
 }
+.middle-list__text {
+  max-width: 12.5rem;
+}
 .footer {
   color: var(--secondary-color);
   font-size: 12px;
@@ -219,6 +222,8 @@ p,
 .footer {
   display: flex;
   align-items: center;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 .footer__text:hover {
   color: var(--hover-color);
@@ -334,6 +339,9 @@ p,
     &:hover > img {
       visibility: visible;
     }
+  }
+  .middle-list__text {
+    max-width: 21.875rem;
   }
   .note {
     padding-bottom: 3.25rem;
