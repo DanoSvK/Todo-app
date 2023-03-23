@@ -136,6 +136,7 @@ p,
   background-color: transparent;
   border: none;
   font-size: 0.75rem;
+  width: 100%;
 }
 // .top-list_input {
 //   position: absolute;
@@ -199,7 +200,9 @@ p,
   }
 }
 .middle-list__text {
-  max-width: 12.5rem;
+  flex: 1;
+  overflow-wrap: anywhere;
+  padding-right: 12px;
 }
 .footer {
   color: var(--secondary-color);
@@ -222,8 +225,6 @@ p,
 .footer {
   display: flex;
   align-items: center;
-  overflow-wrap: break-word;
-  max-width: 100%;
 }
 .footer__text:hover {
   color: var(--hover-color);
@@ -340,9 +341,7 @@ p,
       visibility: visible;
     }
   }
-  .middle-list__text {
-    max-width: 21.875rem;
-  }
+
   .note {
     padding-bottom: 3.25rem;
   }
